@@ -128,11 +128,14 @@
     .hero-card, .glass-card {
       position:relative;
       z-index:1;
-      background:linear-gradient(180deg, rgba(255,255,255,.12), rgba(255,255,255,.05));
+      background:linear-gradient(180deg, rgba(56,48,43,.88), rgba(36,30,27,.82));
       border:1px solid var(--oa-border);
       border-radius:var(--oa-radius);
       box-shadow:var(--oa-shadow-lux);
-      backdrop-filter:blur(20px);
+      -webkit-backdrop-filter:none;
+      backdrop-filter:none;
+      transform:translateZ(0);
+      backface-visibility:hidden;
       overflow:hidden;
     }
 
